@@ -4,7 +4,7 @@
 Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "mrlesmithjr/fedora30-desktop"
+  config.vm.box = "bento/fedora-31"
   #config.vm.network "forwarded_port", guest: 8000, host: 8000
   # config.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
   #config.vm.network "private_network", type: "dhcp"
@@ -16,7 +16,8 @@ Vagrant.configure("2") do |config|
     # Display the VirtualBox GUI when booting the machine
     vb.gui = true
     # Customize the amount of memory on the VM:
-    vb.memory = "1024" 
+    vb.memory = "2048"
+    vb.cpus = "2"
   end
 end
 Vagrant.configure("2") do |config|

@@ -1,3 +1,0 @@
--r readthedocs.txt
-tcms-api
-doc8
